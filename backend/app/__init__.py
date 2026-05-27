@@ -1,0 +1,1 @@
+"""Avera backend application package."""

@@ -1,0 +1,12 @@
+# Monorepo root ignore rules
+# Keep release metadata in release/, but not binary artifacts.
+release/*.exe
+release/*.msi
+release/*.zip
+release/*.7z
+release/*.tar
+release/*.gz
+release/*.sha256
+
+# Optional local notes
+release/*.local.*

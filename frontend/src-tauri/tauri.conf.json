@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "avera-desk",
+  "version": "0.1.0",
+  "identifier": "com.avera.desk",
+  "build": {
+    "beforeDevCommand": "npm run dev:desktop",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build:backend && npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+      "title": "Avera Desk",
+      "width": 460,
+      "height": 260,
+      "minWidth": 460,
+      "minHeight": 260,
+      "resizable": false,
+      "maximizable": false,
+      "minimizable": true,
+      "decorations": false,
+      "visible": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "resources": [
+      "resources/backend",
+      "window-dimensions.json"
+    ],
+    "icon": [
+      "icons/favicon-32x32.png",
+      "icons/android-chrome-192x192.png",
+      "icons/favicon.ico"
+    ]
+  }
+}

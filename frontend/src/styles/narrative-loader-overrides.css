@@ -1,0 +1,9 @@
+.avera-narrative-loader {
+  color: var(--mantine-color-dimmed);
+}
+
+.avera-narrative-loader .nl-line {
+  font-size: var(--mantine-font-size-xs);
+  line-height: 1.35;
+  color: var(--mantine-color-dimmed);
+}
